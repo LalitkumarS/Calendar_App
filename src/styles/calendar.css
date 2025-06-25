@@ -1,0 +1,266 @@
+/* === Layout Container === */
+.calendar-bg {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(-45deg, #fef9f9, #e0f7fa, #e0f2fe, #f3e8ff);
+  background-size: 400% 400%;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes popup {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Sidebar === */
+.events-sidebar {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+  padding: 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 6px 0 20px rgba(0, 0, 0, 0.06);
+  animation: fadeInLeft 1s ease;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* === View Buttons (Dashboard, Daily, etc.) === */
+button.nav-btn,
+button.bg-gradient-to-r {
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+button.nav-btn:hover,
+button.bg-gradient-to-r:hover {
+  background: linear-gradient(to right, #4338ca, #6366f1);
+  transform: scale(1.05);
+}
+
+button.bg-gray-100 {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+button.bg-gray-100:hover {
+  background-color: #cbd5e1;
+  color: #1e293b;
+}
+
+button.bg-indigo-600 {
+  background-color: #4f46e5 !important;
+  color: white;
+}
+
+/* === Event Cards in Sidebar === */
+.event-item {
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #e3f2fd, #ffffff);
+  color: #0f172a;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(147, 197, 253, 0.25);
+  margin-bottom: 12px;
+  border-left: 5px solid #3b82f6;
+}
+.event-item:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(145deg, #dbeafe, #f0f9ff);
+}
+
+/* === Calendar === */
+.calendar-main {
+  flex-grow: 1;
+  padding: 24px 32px;
+  max-width: calc(100% - 280px);
+  backdrop-filter: blur(8px);
+  animation: slideUp 0.7s ease;
+}
+
+.calendar-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* === Calendar Grid === */
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-size: 15px;
+  color: #334155;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  padding: 0 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.calendar-day {
+  background: linear-gradient(to bottom right, #ffffff, #eef2ff);
+  border-radius: 14px;
+  padding: 14px;
+  min-height: 100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+}
+.calendar-day:hover {
+  transform: scale(1.03);
+  border-color: #6366f1;
+}
+
+.today {
+  border: 2px solid #6366f1;
+  background: linear-gradient(to bottom right, #e0e7ff, #c7d2fe);
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.2);
+}
+
+.day-number {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+/* === Event Text === */
+.holiday {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+.personal-event {
+  color: #16a34a;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* === Popup Card === */
+.event-card-popup {
+  position: absolute;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  z-index: 999;
+  min-width: 220px;
+  animation: popup 0.3s ease-in-out;
+}
+.event-date {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+.event-holiday {
+  font-size: 14px;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+/* === Dropdown === */
+.priority-filter-dropdown {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+.priority-filter-dropdown:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+/* === Highlight Days === */
+.highlight-priority {
+  border: 2px solid #6366f1;
+  background: linear-gradient(to right, #e0e7ff, #f0f4ff);
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.2);
+}
+
+/* === Conflict Indicator === */
+.conflict-day {
+  border: 2px solid #f59e0b !important;
+  background: #fff7ed !important;
+  position: relative;
+}
+.conflict-icon {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 15px;
+  color: #f59e0b;
+}
+
+/* === Clicked Event Card === */
+.clicked-event-display {
+  background: #fff7ed;
+  border: 1px solid #f59e0b;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: #92400e;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.2);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+animation: gradientShift 25s ease-in-out infinite;

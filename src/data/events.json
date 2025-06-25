@@ -1,0 +1,190 @@
+[
+  { "date": "2025-01-01", "name": "New Year's Day" },
+  { "date": "2025-01-26", "name": "Republic Day" },
+  { "date": "2025-03-17", "name": "Holi" },
+  { "date": "2025-04-10", "name": "Ram Navami" },
+  { "date": "2025-04-14", "name": "Ambedkar Jayanti" },
+  { "date": "2025-05-01", "name": "Labour Day" },
+  { "date": "2025-05-23", "name": "Buddha Purnima" },
+  { "date": "2025-08-15", "name": "Independence Day" },
+  { "date": "2025-08-19", "name": "Raksha Bandhan" },
+  { "date": "2025-10-02", "name": "Gandhi Jayanti" },
+  { "date": "2025-10-20", "name": "Dussehra" },
+  { "date": "2025-11-01", "name": "Diwali" },
+  { "date": "2025-11-03", "name": "Bhai Dooj" },
+  { "date": "2025-12-25", "name": "Christmas Day" },
+ {
+    "id": "june1",
+    "name": "Critical Security Audit",
+    "date": "2025-06-25",
+    "time": "09:00 AM",
+    "category": "Security",
+    "status": "Critical"
+  },
+  {
+    "id": "june2",
+    "name": "Product Demo",
+    "date": "2025-06-27",
+    "time": "11:30 AM",
+    "category": "Client",
+    "status": "High Priority"
+  },
+  {
+    "id": "june3",
+    "name": "Team Lunch",
+    "date": "2025-06-30",
+    "time": "01:00 PM",
+    "category": "Culture",
+    "status": "Low Priority"
+  },
+
+  {
+    "id": "july1",
+    "name": "Quarterly Planning",
+    "date": "2025-07-03",
+    "time": "10:00 AM",
+    "category": "Strategy",
+    "status": "Medium Priority"
+  },
+  {
+    "id": "july2",
+    "name": "DB Maintenance",
+    "date": "2025-07-10",
+    "time": "07:00 AM",
+    "category": "IT",
+    "status": "Critical"
+  },
+  {
+    "id": "july3",
+    "name": "Birthday Reminder - Riya",
+    "date": "2025-07-15",
+    "time": "09:00 AM",
+    "category": "Reminder",
+    "status": "Reminder"
+  },
+
+  {
+    "id": "aug1",
+    "name": "Hackathon Kickoff",
+    "date": "2025-08-01",
+    "time": "10:00 AM",
+    "category": "Development",
+    "status": "Scheduled"
+  },
+  {
+    "id": "aug2",
+    "name": "Annual Leave Starts",
+    "date": "2025-08-08",
+    "time": "12:00 PM",
+    "category": "HR",
+    "status": "Low Priority"
+  },
+  {
+    "id": "aug3",
+    "name": "Critical Deployment",
+    "date": "2025-08-14",
+    "time": "03:00 PM",
+    "category": "DevOps",
+    "status": "Critical"
+  },
+
+  {
+    "id": "sep1",
+    "name": "Sprint Retrospective",
+    "date": "2025-09-02",
+    "time": "04:00 PM",
+    "category": "Scrum",
+    "status": "Medium Priority"
+  },
+  {
+    "id": "sep2",
+    "name": "Parent-Teacher Meeting",
+    "date": "2025-09-12",
+    "time": "09:30 AM",
+    "category": "Personal",
+    "status": "High Priority"
+  },
+  {
+    "id": "sep3",
+    "name": "Document Review",
+    "date": "2025-09-19",
+    "time": "02:30 PM",
+    "category": "Compliance",
+    "status": "Scheduled"
+  },
+
+  {
+    "id": "oct1",
+    "name": "Diwali Celebration",
+    "date": "2025-10-28",
+    "time": "05:00 PM",
+    "category": "Culture",
+    "status": "Low Priority"
+  },
+  {
+    "id": "oct2",
+    "name": "Board Meeting",
+    "date": "2025-10-14",
+    "time": "10:00 AM",
+    "category": "Executive",
+    "status": "High Priority"
+  },
+  {
+    "id": "oct3",
+    "name": "Deadline - Research Paper",
+    "date": "2025-10-30",
+    "time": "11:59 PM",
+    "category": "Academic",
+    "status": "Critical"
+  },
+
+  {
+    "id": "nov1",
+    "name": "Budget Planning",
+    "date": "2025-11-05",
+    "time": "10:30 AM",
+    "category": "Finance",
+    "status": "Medium Priority"
+  },
+  {
+    "id": "nov2",
+    "name": "System Upgrade",
+    "date": "2025-11-17",
+    "time": "02:00 PM",
+    "category": "IT",
+    "status": "Critical"
+  },
+  {
+    "id": "nov3",
+    "name": "Remind Dev Team – Docs",
+    "date": "2025-11-22",
+    "time": "04:30 PM",
+    "category": "Reminder",
+    "status": "Reminder"
+  },
+
+  {
+    "id": "dec1",
+    "name": "Christmas Party",
+    "date": "2025-12-24",
+    "time": "06:00 PM",
+    "category": "Fun",
+    "status": "Low Priority"
+  },
+  {
+    "id": "dec2",
+    "name": "Year-End Review",
+    "date": "2025-12-29",
+    "time": "10:00 AM",
+    "category": "Management",
+    "status": "Scheduled"
+  },
+  {
+    "id": "dec3",
+    "name": "Final Payroll Submission",
+    "date": "2025-12-31",
+    "time": "01:00 PM",
+    "category": "HR",
+    "status": "High Priority"
+  }
+]

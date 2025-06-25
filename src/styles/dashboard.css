@@ -1,0 +1,83 @@
+/* === Dashboard Container === */
+.dashboard-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  min-height: 100vh;
+}
+
+/* === Title === */
+.dashboard-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* === Sections === */
+.dashboard-section {
+  margin-bottom: 2rem;
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dashboard-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* === Priority Cards Grid === */
+.priority-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* === Individual Priority Card === */
+.priority-card {
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.priority-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === Upcoming Event List === */
+.upcoming-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.upcoming-list li {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s;
+}
+.upcoming-list li:hover {
+  background: #e5e7eb;
+}
+
+/* === Event Status Tag === */
+.event-status {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6b7280;
+  background: #e0e7ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
